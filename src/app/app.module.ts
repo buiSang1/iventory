@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbCardModule, NbThemeModule, NbIconModule, NbSelectModule, NbDialogModule } from '@nebular/theme';
+import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbCardModule, NbThemeModule, NbIconModule, NbSelectModule, NbDialogModule, NbDatepickerModule } from '@nebular/theme';
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 
@@ -34,6 +34,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
     NbSelectModule,
     NbDialogModule.forRoot(),
     NbDialogModule.forChild(),
+    NbDatepickerModule.forRoot(),
+    NbDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

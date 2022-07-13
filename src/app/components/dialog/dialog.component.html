@@ -12,6 +12,30 @@
         formControlName="Password" />
       <br />
       <br />
+      <nb-select placeholder="Select Showcase" [(selected)]="selectedItem">
+        <nb-option value="0">Others</nb-option>
+        <nb-option value="1">Point</nb-option>
+        <nb-option value="2">Voucher/Coupon</nb-option>
+        <nb-option value="3">Course</nb-option>
+        <nb-option value="4">Ticket</nb-option>
+      </nb-select>
+      <br />
+      <br />
+      <input nbInput placeholder="Start Day" [nbDatepicker]="dateTimePicker">
+      <nb-datepicker #dateTimePicker></nb-datepicker>
+      <br />
+      <br />
+      <input nbInput placeholder="End Day" [nbDatepicker]="dateTimePicker1">
+      <nb-datepicker #dateTimePicker1></nb-datepicker>
+      <br />
+      <br />
+      <nb-select placeholder="Select Showcase" [(selected)]="selectedItem1">
+        <nb-option value="0">Đang diễn ra</nb-option>
+        <nb-option value="1">Kết thúc</nb-option>
+
+      </nb-select>
+      <br />
+      <br />
       <input nbInput type="text" placeholder="UserName" fieldSize="medium" shape="rectangle"
         formControlName="UserName" />
     </form>

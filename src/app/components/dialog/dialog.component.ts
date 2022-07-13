@@ -32,7 +32,8 @@ const Posts_register = gql`
   styleUrls: ['./dialog.component.scss']
 })
 export class DialogComponent implements OnInit {
-
+  selectedItem = '0';
+  selectedItem1 = '0';
   users: User[] = [];
   names: string[] = [];
   inputname = '';
